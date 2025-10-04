@@ -1,0 +1,110 @@
+/* Container holds bride and groom sections side by side on desktop */
+.container {
+  display: flex;
+  gap: 2rem;           /* space between columns */
+  flex-wrap: wrap; 
+  overflow: visible;    /* allow wrapping on small screens */
+}
+
+/* Each section takes equal space */
+.container > div {
+  flex: 1 1 300px;     /* grow/shrink, min width 300px */
+  min-width: 300px;    /* minimum width to avoid squishing */
+}
+
+/* Form fields full width and spaced */
+mat-form-field {
+  width: 80%;
+  margin-bottom: 1rem;
+}
+
+/* Center form and limit max width */
+form {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+mat-toolbar {
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+}
+
+/* Spacer pushes items to right */
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+/* Toolbar title styling */
+.toolbar-title {
+  font-size: 2rem;
+  font-weight: 800;
+  margin-left: 12px;
+  white-space: nowrap;
+}
+
+/* Icon button spacing */
+.example-icon {
+  margin-left: 8px;
+}
+mat-toolbar {
+  background: linear-gradient(45deg, #6a11cb, #2575fc); /* Purple to blue gradient */
+  color: white; /* Ensure text/icons are visible */
+}
+
+.button-container {
+  display: flex;
+  //justify-content: center; /* centers horizontally */
+ // margin-top: 20px;        /* some spacing above */
+}
+
+.big-button {
+ // width: 50%;            /* or any width you want */
+  font-size: 1.25rem;    /* bigger text */
+ // padding: 12px 0;       /* taller button */
+}
+
+.large-star {
+  font-size: 48px;
+  color: gold;
+}
+
+mat-icon {
+  font-size: 27px;
+  line-height: 1;
+  vertical-align: middle; /* or baseline, or bottom depending on layout */
+  color: gold;
+}
+
+.circle-score {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #3f51b5; /* Material primary color */
+  color: white;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.circle-score .divider {
+  font-size: 0.9rem;
+  margin: 0 2px;
+  align-items: center;
+}
+
+/* Mobile adjustments */
+@media (max-width: 600px) {
+  .toolbar-title {
+    font-size: 2rem;
+    margin-left: 8px;
+  }
+
+  .example-icon {
+    margin-left: 4px;
+  }
+}
+

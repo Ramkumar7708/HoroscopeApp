@@ -1,0 +1,8 @@
+{
+    "appService.zipIgnorePattern": [
+        "node_modules{,/**}",
+        ".vscode{,/**}"
+    ],
+    "appService.defaultWebAppToDeploy": "/subscriptions/41097c10-9ad3-4ff3-b135-68f41d26442a/resourceGroups/HoroscopeApp/providers/Microsoft.Web/sites/MyMatchingStars",
+    "appService.deploySubpath": "dist\\horoscope-matching"
+}
